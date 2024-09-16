@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c6ced2;
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1d2225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+#wordInput {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid #1d2225;
+    border-radius: 4px;
+}
+
+button {
+    width: 96px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #5c74ff;
+    color: #e2e7e9;
+    transform: translateY(-4px);
+}
+
+button:disabled {
+    background-color: #a9b6bc;
+    color: #90a0a7;
+    cursor: not-allowed;
+}
+
+hr {
+    border: 1px solid #1d2225;
+    width: 480px;
+}
+
+div.config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+}
+
+div.config input {
+    width: 48px;
+    height: 32px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid #1d2225;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+div.config input:last-child {
+    margin-right: 0;
+}   
+
+div.config button {
+    width: 168px;
+    transform: none;
+    padding-top: 2px;
+}
