@@ -46,7 +46,7 @@ function getRandomWord() {
         // xhr.send();
         // XHR
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "/dict.json");
+        xhr.open("GET", "dict.json");
         xhr.onload = function () {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
